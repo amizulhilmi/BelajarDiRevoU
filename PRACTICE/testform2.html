@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <style>
+        body {
+            background-image:
+            linear-gradient(90deg,
+              rgba(150, 121, 105,0.95),
+              rgba(150, 121, 105, 0.50),
+              rgba(0,0,0,0.1)),
+              url('Family-Potrait.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Lucida Grande';
+        }
+        main {
+            flex-direction: row;
+            display: flex;
+        }
+        main > div {
+            display: flex;
+            flex: 1;
+            align-self: start;
+        }
+        footer {
+            text-align: center;
+        }
+        table{
+            width: 800px;
+        }
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            align-self: center;
+            text-align: center;
+        }
+        main > form {
+            flex-direction: column;
+            display: flex;
+        }
+        main > form > div {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <Header>
+            <h1>Form Belajar</h1>
+        </Header>
+        <p>Ini adalah website latihan pertama</p>
+    </article>
+    <main>
+        <div>
+            <form class="form" action="" target="_blank">
+                <div>
+                    <label for="Nama">Nama : </label>
+                    <input id="Nama" type="text" style="min-width: 100%;" />
+                </div>
+                <div>
+                    <label for="TL">Tanggal Lahir : </label>
+                    <input id="TL" type="date" style="min-width: 100%;" />
+                </div>
+                <div>
+                    <label for="JK">Jenis Kelamin : </label>
+                    <input id="Laki" type="radio" name="Jenis_Kelamin" value="Laki-Laki" />
+                    <label for="Laki">Laki-Laki</label>
+                    <input id="Perempuan" type="radio" name="Jenis_Kelamin" value="Perempuan" />
+                    <label for="Perempuan">Perempuan</label>
+                </div>
+                <div>
+                    <label for="Pesan">Pesan : </label>
+                    <textarea id="Pesan" rows="8" style="min-width: 100%;"></textarea>
+                </div>
+                <input type="submit" value="Submit" style="min-width: 102%;" />
+            </form>
+        </div>
+<div>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Jill Smith</td>
+                    <td>09/11/1966</td>
+                    <td>Laki-Laki</td>
+                    <td>Hanya kepandaian papa yang bisa papa wariskan, manfaatkan dengan baik ya nak!</td>
+                    <td><img src="trash-can.png" style="padding: 10px; width: 15%; height: 15%;" /></td>
+                </tr>
+                <tr>
+                    <td>Aisha Pakistani</td>
+                    <td>09/11/1996</td>
+                    <td>Perempuan</td>
+                    <td>Allah dulu, Allah lagi, Allah terus</td>
+                    <td><img src="trash-can.png" style="padding: 10px; width: 15%; height: 15%;" /></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <h3><a href="#">Back to Top</a></h3>
+    <footer>
+        <h5>Azalia 2023</h5>
+    </footer>
+</body>
+</html>
